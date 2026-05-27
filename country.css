@@ -1,0 +1,152 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: Nunito, sans-serif;
+    background-color: #f8f8f8f5;
+}
+
+.title{
+    font-weight: 800;
+}
+
+.header-container{
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.1);
+    padding-inline: 24px;
+}
+
+
+.header-content{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1280px;
+    margin-inline: auto;
+    
+}
+
+main{
+    margin-inline: auto;
+    max-width: 1600px;
+    margin-top: 60px;
+   padding-inline: 16px;
+}
+
+main .back-button{
+    background-color: white;
+    border: 1px solid whitesmoke ;
+    border-radius: 3px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    font-size: 13px;
+    padding: 8px 28px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+
+.country-details{
+   display: flex;
+   gap: 120px;
+   margin-top: 70px;
+}
+
+@media(max-width:1296px)
+{
+    .country-details{
+        flex-direction: column;
+        gap: 48px;
+    }
+}
+
+
+ img{
+   max-width: 700px;
+}
+
+.details-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.details-container h2{
+  font-size: 32px;
+  font-weight: 800;
+}
+
+
+.details{
+    display: flex;
+    gap:10rem;
+}
+
+
+.border-countries-details{
+    display: flex;
+    margin-top: 40px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.button-box{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+
+.border-button{
+    background-color: white;
+    padding: 6px 20px;
+    
+    height: 30px;
+    font-size: 14px;
+    border: 1px solid whitesmoke ;
+    border-radius: 2px;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+    /* margin-inline: 10px; */
+    cursor: pointer;
+}
+
+
+
+@media(max-width:768px)
+{
+    .border-countries-details{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .details{
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .details-container h2{
+        font-size: 20px;
+    }
+
+    .title{
+        font-size: 20px;
+    }
+
+    .header-container{
+        padding-block: 24px;
+    }
+    
+    
+}
+
+@media(max-width:400px)
+{
+    .border-button{
+        margin-inline: 4px;
+    }
+}
+
+
+
